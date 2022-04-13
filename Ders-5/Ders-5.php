@@ -48,10 +48,18 @@
         ),
         "sinif" => "2"
     );
+    
+    /* Uygulama: Öğrenci Detayı Dizisini Alt Alta döngüleri kullanarak yazdırınız. */
+    // Çıktısı
+    foreach($ogrencidetay as $ogrencibilgi => $ogrenciadi) {  
+        echo "$ogrencibilgi . $ogrenciadi<br>";
+    }
+    
     echo "<pre>";
     print_r($ogrencidetay);
     echo "</pre>";
-
+   
+    
     echo "Öğrencinin Dersleri: ";
 
     echo $ogrencidetay["dersler"]["ders1"] . "<br>";
@@ -87,6 +95,28 @@
             "sinif"     => "4"
         )
     );
+    //çıktısı
+    echo "<br>Öğrenci 1'in Detayları:<br>";
+    echo $ogrenciDetaylari["ogrenci1"]["id"] . "<br>";
+    echo $ogrenciDetaylari["ogrenci1"]["adi"] . "<br>";
+    echo $ogrenciDetaylari["ogrenci1"]["soyadi"] . "<br>";
+    echo $ogrenciDetaylari["ogrenci1"]["bolum"] . "<br>";
+    echo $ogrenciDetaylari["ogrenci1"]["yas"] . "<br>";
+    echo $ogrenciDetaylari["ogrenci1"]["dersler"]["ders1"] . "<br>";
+    echo $ogrenciDetaylari["ogrenci1"]["dersler"]["ders2"] . "<br>";
+    echo $ogrenciDetaylari["ogrenci1"]["dersler"]["ders3"] . "<br>";
+    echo $ogrenciDetaylari["ogrenci1"]["sinif"] . "<br>";
+    echo "<br>Öğrenci 2'nin Detayları:<br>";
+    echo $ogrenciDetaylari["ogrenci2"]["id"] . "<br>";
+    echo $ogrenciDetaylari["ogrenci2"]["adi"] . "<br>";
+    echo $ogrenciDetaylari["ogrenci2"]["soyadi"] . "<br>";
+    echo $ogrenciDetaylari["ogrenci2"]["bolum"] . "<br>";
+    echo $ogrenciDetaylari["ogrenci2"]["yas"] . "<br>";
+    echo $ogrenciDetaylari["ogrenci2"]["dersler"]["ders1"] . "<br>";
+    echo $ogrenciDetaylari["ogrenci2"]["dersler"]["ders2"] . "<br>";
+    echo $ogrenciDetaylari["ogrenci2"]["dersler"]["ders3"] . "<br>";
+    echo $ogrenciDetaylari["ogrenci2"]["sinif"] . "<br>";
+
 
     ?>
 
@@ -209,7 +239,7 @@
 
 
     //1- 
-    echo "<h4>Uygulamalar</h4>";
+    echo "<h4>1-)</h4>";
     $rastgele = rand(0, 100);
     if ($rastgele % 2 == 0) {
         echo "<br> $rastgele sayısı çift";
@@ -218,6 +248,7 @@
     }
 
     //2-
+    echo "<h4>2-)</h4>";
     $rastgele = rand(0, 100);
     if ($rastgele >= 50) {
         echo "<br> $rastgele ile geçtiniz.";
@@ -226,8 +257,9 @@
     }
 
     //3-
+    echo "<h4>3-)</h4>";
     $dogumyili = rand(1970, 2020);
-    echo "<br><br><br> Doğum yılınız: $dogumyili";
+    echo "<br> Doğum yılınız: $dogumyili";
     $yas = date('Y') - $dogumyili;
     if ($yas > 18) {
         echo "<br> $yas yaşındasınız ehliyet alabilirsiniz.";
