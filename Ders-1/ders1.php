@@ -60,9 +60,7 @@
 
 
 
-
     ?>
-    <input type="text" name="" value="<?php echo $isim; ?>" id="">
     <form action="">
         <label for="uni">Üniversite</label>
         <input type="text" name="" disabled value="<?php echo $uni; ?>" id="uni"><br> 

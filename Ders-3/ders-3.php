@@ -12,8 +12,6 @@
     
     <?php
 
-    use function PHPSTORM_META\type;
-
     $not = rand(10, 100);
     if ($not >= 50) {
         echo "Geçtiniz-Notunuz:$not";
@@ -115,7 +113,6 @@
         echo "$parca ";
     }
 
-    /* Trim Substr str_replace - md5 - sha1 */
 
     ?>
 </body>
